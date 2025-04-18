@@ -45,18 +45,18 @@ sorteio_vagas_app/
 ### Cadastro de Unidades
 
 | unidade   | tipo   | preferencia_1 | preferencia_2 | ... |
-|-----------|--------|----------------|----------------|-----|
-| Apto 101  | TRIPLO | 01             | 02             | ... |
+|-----------|--------|---------------|---------------|-----|
+| 101A      | TRIPLO | 01            | 02            | ... |
 
 - `tipo`: deve ser um dos valores **PNE**, **TRIPLO** ou **DUPLO**
 - `preferencia_n`: representa o grupo da vaga desejada
 
 ### Cadastro de Vagas
 
-| vagas | grupo_vaga | pavimento | tipo   |
-|-------|------------|-----------|--------|
-| 01    | 01         | 1         | TRIPLO |
-| 02    | 02         | 2         | DUPLO  |
+| vagas   | grupo_vaga | pavimento | tipo   |
+|---------|------------|-----------|--------|
+| 01 - 02 | 01         | 1º andar  | TRIPLO |
+| 03 - 04 | 02         | TÉRREO    | DUPLO  |
 
 ---
 

@@ -58,44 +58,6 @@ sorteio_vagas_app/
 | 01 - 02 | 01         | 1º andar  | TRIPLO |
 | 03 - 04 | 02         | TÉRREO    | DUPLO  |
 
----
-
-## ▶️ Como executar localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/sorteio-vagas-condominio.git
-   cd sorteio-vagas-condominio
-   ```
-
-2. Crie e ative o ambiente virtual:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # Windows: .venv\Scripts\activate
-   ```
-
-3. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Rode o app:
-   ```bash
-   streamlit run streamlit_app.py
-   ```
-
----
-
-## ☁️ Como publicar na Streamlit Cloud
-
-1. Acesse: https://streamlit.io/cloud  
-2. Clique em **"New app"** e conecte seu repositório GitHub  
-3. Escolha o arquivo `streamlit_app.py` como ponto de entrada  
-4. Certifique-se de que seu repositório contenha:
-   - `streamlit_app.py`
-   - `requirements.txt`
-   - `.streamlit/config.toml`
-5. Clique em **Deploy** — pronto!
 
 ---
 

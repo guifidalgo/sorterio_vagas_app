@@ -4,14 +4,14 @@ from app.core.sorteio import sortear_ordem_unidades, alocar_vagas
 from app.core.exportacao import exportar_excel
 
 def run_app():
-    st.set_page_config(page_title="Sorteio de Vagas", page_icon=':car:', layout="wide")
+    st.set_page_config(page_title="Sorteio de Vagas - Demo", page_icon=':car:', layout="wide")
     st.title("🎯 Aplicativo de Sorteio de Vagas por Preferência")
 
-    st.sidebar.header("📂 Upload dos Arquivos")
+    st.sidebar.header("📂 Versão Demo")
     unidades_file = 'app/data/CadastroUnidades.csv' # st.sidebar.file_uploader("Cadastro de Unidades", type=["csv", "xlsx"])
     vagas_file = 'app/data/CadastroVagas.csv' # st.sidebar.file_uploader("Cadastro de Vagas", type=["csv", "xlsx"])
 
-    tipo_sorteio = st.sidebar.selectbox("🔀 Tipo de Vaga", ["PNE", "TRIPLO", "DUPLO"])
+    tipo_sorteio = st.sidebar.selectbox("🔀 Tipo de Vaga", ["PNE", "TRIPLO", "DUPLO"], index=1)
 
     if "df_sorteio" not in st.session_state:
         st.session_state["df_sorteio"] = None
